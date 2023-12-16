@@ -19,24 +19,25 @@ function getNumber() {
 function increase() {
     let number = getNumber();
     number += 1;
-    numbCount.innerText = number
-    console.log(number)
+    numbCount.innerText = number;
+    console.log(number);
 }
 function decrease() {
     let number = getNumber();
     if (number > 0) {
         number -= 1;
-        numbCount.innerText = number
-        console.log(number)
+        numbCount.innerText = number;
+        console.log(number);
     }else {
-        alert('ลดกว่านี้ไม่ได้แล้ว')
+        alert('ลดกว่านี้ไม่ได้แล้ว');
     }
 }
 function clear() {
     let number = getNumber();
     number = 0;
     numbCount.innerText = number;
-    console.log(number)
+    console.log(number);
+    alert('ทำการล้างข้อมูลกลับไปเหลือ 0 แล้ว \n จัดทำโดยปุระชัย  เหมกุล CS RMU');
 }
 
 inc.addEventListener('click', increase);
